@@ -1,0 +1,25 @@
+{
+  "name": "p4",
+  "version": "1.0.0",
+  "description": "**Table of Contents**     + [App Description](#app-description)     + [User Stories](#user-stories)     + [Wireframes](#wireframes)       + [Landing Page](#landing-page)       + [Register Page](#register-page)       + [Login Page](#login-page)     + [Profile Page](#profile-page)     + [Home Page](#home-page)     + [Friends Page](#friends-page)     + [Chatroom Page](#chatroom-page)     + [Database](#visual-representation-of-database)     + [Tech Used](#tech-used)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomonsokoya/CurrentlySingle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solomonsokoya/CurrentlySingle/issues"
+  },
+  "homepage": "https://github.com/solomonsokoya/CurrentlySingle#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "open": "0.0.5",
+    "socket.io": "^2.1.1",
+    "util": "^0.10.3"
+  }
+}

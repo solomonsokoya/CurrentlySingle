@@ -1,21 +1,34 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from "react";
+import {Platform, StyleSheet, Text, View, StatusBar} from "react-native";
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-      </View>
-    );
-  }
-}
+import SignIn from "./components/SignIn";
+import UserPage from "./components/UserPage"
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+import {createStackNavigator} from "react-navigation";
+import * as firebase from 'firebase';
+
+
+
+ const Navigation= createStackNavigator(
+  {
+    SignIn: {
+      screen: SignIn
+    },
+    UserPage: {
+      screen: UserPage
+    }
   },
-});
+    {
+    index: 0,
+    initialRouteName: 'SignIn',
+    headerMode: 'none',
+    navigationOptions: {
+      gesturesEnabled: false
+    }
+  }
+ );
+
+export default Navigation;
+
+
+
