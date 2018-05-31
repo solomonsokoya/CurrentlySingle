@@ -12,10 +12,8 @@ app.get('/', function (req, res) {
 
 io.on('connection', function (socket) {
   console.log("This is socket.id:" + socket.id )
-  socket.on('update', () => io.emit('update'))
-
-  socket.on('send messgae', function (data){
-    io.emit('new messgae', {msg: data});
+  socket.on('chat message', function(msg){
+    console.log('message: ' + msg);
   })
 
 })
