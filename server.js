@@ -3,11 +3,11 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 const PORT = process.env.PORT || 3009;
+
 server.listen(PORT);
 
 app.get('/', function (req, res) {
-  res.send("hii")
-  // res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 io.on('connection', function (socket) {
